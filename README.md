@@ -2,55 +2,8 @@
 https://olii-dev.github.io/portfolio/#home
 ## (Preferably on desktop)
 to see my Portfolio!
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526682619)
-
-### Azure Static Web Apps
-
-[Azure Static Web Apps](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=academic-79839-sagibbon) is Microsoft's hosting solution for static sites (or sites that are rendered in the user's browser, not on a server) through Azure. This service provides additional opportunities to expand your site through Azure Functions, authentication, staging versions and more.
-
-You'll need both Azure and GitHub accounts to deploy your web application. If you don't yet have an Azure account you can create it from within during the deploy process, or from below links:
-
-* [Create a (no Credit Card required) Azure For Students account](https://azure.microsoft.com/free/students/?WT.mc_id=academic-79839-sagibbon)
-* [Create a new Azure account](https://azure.microsoft.com/?WT.mc_id=academic-79839-sagibbon)
-
-With your project open in Codespaces:
-
-1. Click Azure icon in the left sidebar. Log in if you are not already, and if new to Azure, follow the prompts to create your account.
-1. From Azure menu click “+” sign and then “Create Static Web App”.
-1. If you are not logged into GitHub you will be prompted to log in. If you have any pending file changes you will then be prompted to commit those changes.
-1. Set your application information when prompted:
-    1. **Region**: pick the one closest to you
-    1. **Project structure**: select "React"
-    1. **Location of application code**: `/`
-    1. **Build location**: `dist`
-1. When complete you will see a notification at the bottom of your screen, and a new GitHub Action workflow will be added to your project. If you click “Open Action in GitHub” you will see the action that was created for you, and it is currently running.
-![Azure Static Web App deploy](/__images__/swa-deploy.gif "Azure Static Web App deploy")
-1. To view the status of your deployment, find your Static Web App resource in the Azure tab in the VS Code left side bar.
-1. Once deployment is complete, you can view your brand new new publicly accessible application by right clicking on your Static Web App resource and selecting "Browse Site".
-
-> **Issues?** When creating your Static Web app, if you are prompted to select an Azure subscription and are not able to select a subscription, check the "Accounts" tab in VS Code. Make sure to choose the "Grant access to ..." options if those options appear. Should you receive the error-message "RepositoryToken is invalid. ..." switch to Visual Studio Code for the Web (vscode.dev) and repeat the steps there.
-
-> 🤩 **Bonus**: [Setup a custom domain for your Azure Static Web App](https://learn.microsoft.com/en-us/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=academic-79839-sagibbon)
-
-### GitHub Pages
-
-[GitHub Pages](https://pages.github.com/) allows you to host websites directly from your GitHub repository. This project is already set up for you to get your portfolio deployed to GitHub pages with minimal steps.
-
-With your project open in Codespaces:
-
-1. Open `package.json` and update the following values:
-    1. **homepage**: set to `http://{github-username}.github.io/{repo-name}`, where `github-username` is your GitHub username and `repo-name` is the what you named this portfolio repo when you created it
-    1. **build-gh**: replace `github-username` with your GitHub username and `repo-name` with the repository name
-1. Commit and push those changes to `package.json` to your GitHub remote repo.
-1. Open a new terminal from the menu or by pressing `ctrl` + `shift` + ` (or open top left menu, select "Terminal" and "New Terminal")
-1. Within the terminal window run `npm run deploy`. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
-1. When completed, within your repo, go to Settings and Pages. There you will see that a page has been set up to for you against the gh-pages branch, and you should see the URL (that should match the “homepage” value you set in package.json)
-
-![Azure Static Web App deploy](/__images__/github-pages-deploy.gif "Azure Static Web App deploy")
-
-> 🤩 **Bonus**: [Setup a custom domain for your GitHub pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-<br />
 
 ## 🏆 Customizing with Copilot
 
@@ -61,10 +14,6 @@ Below are 4 additional ways you can continue to customize your Codespace and por
   1. [Animate the desk photo](#3-animate-desk-photo)
   1. [Add a new section](#4-add-a-new-section)
 
-> 👋 Getting Copilot access
->
-> If you don't yet have Copilot access, you can [request it here](https://github.com/login?return_to=%2fgithub-copilot%2fsignup). If you are a student, you can get Copilot for **FREE** [following these instructions](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-sagibbon).
->
 > To ensure that Copilot is running correctly, navigate to the extension tab in your Codespace and check the status of the Copilot extension. If the status is inactive, recreate the Codespace, and enable the extension to ensure that it is activated.
 
 ### 1. Customize your Codespace
